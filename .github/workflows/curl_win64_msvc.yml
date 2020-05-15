@@ -14,7 +14,7 @@ jobs:
     steps:
     - name: Download curl
       run: |
-        - mkdir c:\temp
+        - New-Item -Path "c:\" -Name "temp" -ItemType "directory"
         - (new-object System.Net.WebClient).DownloadFile('https://curl.haxx.se/download/curl-7.70.0.zip', 'C:\temp\curl-7.70.0.zip')
         - Expand-Archive -LiteralPath C:\temp\curl-7.70.0.zip -DestinationPath C:\curl -Force    
     
