@@ -19,5 +19,6 @@ jobs:
       shell: cmd 
       run: |
         cd c:\temp\curl-7.70.0\winbuild\
+        call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x86_amd64
         set MACHINE=x64
         nmake /f Makefile.vc mode=static
