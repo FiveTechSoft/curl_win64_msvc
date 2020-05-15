@@ -18,8 +18,8 @@ jobs:
     - name: Build curl using msvc
       shell: cmd 
       run: |
-        dir c:\curl-7.70.0\curl-7.70.0\winbuild 
         cd c:\curl-7.70.0\curl-7.70.0\winbuild
+        pwd
         call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x86_amd64
         set MACHINE=x64
-        nmake /f Makefile.vc mode=static
+        nmake /f c:\curl-7.70.0\curl-7.70.0\winbuild\Makefile.vc mode=static
