@@ -1,0 +1,1 @@
+# curl_win64_msvc
