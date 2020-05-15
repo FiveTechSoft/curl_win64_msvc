@@ -22,8 +22,6 @@ jobs:
         call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x86_amd64
         set MACHINE=x64
         nmake /f Makefile.vc mode=static
-        cd ..
-        cd ..
         
     - name: Get current time
       uses: srfrnk/current-time@master
@@ -37,4 +35,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
        name: modharbour_win64_msvc_${{ env.TIME }}
-       path: build
+       path: curl-7.70.0
