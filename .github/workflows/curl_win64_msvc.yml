@@ -14,4 +14,5 @@ jobs:
       run: |
         - (new-object System.Net.WebClient).DownloadFile( 'https://curl.haxx.se/download/curl-7.70.0.zip', 'c:\temp\curl-7.70.0.zip')    
         - Expand-Archive -LiteralPath 'c:\temp\curl-7.70.0.zip' -DestinationPath 'c:\curl' -Force
+        - Dir
           
