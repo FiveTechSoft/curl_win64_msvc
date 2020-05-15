@@ -12,8 +12,8 @@ jobs:
     steps:
     - name: Download curl
       run: |
-        - (new-object System.Net.WebClient).DownloadFile( 'https://curl.haxx.se/download/curl-7.70.0.zip', 'c:\temp\curl7.70.0.zip')
-        - Expand-Archive -Path c:\temp\curl7.70.0.zip -DestinationPath c:\curl -Force    
+        - (new-object System.Net.WebClient).DownloadFile( 'https://curl.haxx.se/download/curl-7.70.0.zip', 'c:\temp\curl7700.zip')
+        - Expand-Archive -Path c:\temp\curl7700.zip -DestinationPath c:\curl -Force    
           
     - name: Build curl using msvc
       shell: cmd 
