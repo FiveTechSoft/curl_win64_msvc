@@ -23,6 +23,7 @@ jobs:
         set MACHINE=x64
         nmake /f Makefile.vc mode=static
         cd ..
+        dir -s build
         
     - name: Get current time
       uses: srfrnk/current-time@master
