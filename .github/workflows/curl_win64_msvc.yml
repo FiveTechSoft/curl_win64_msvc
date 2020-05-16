@@ -35,4 +35,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
        name: modharbour_win64_msvc_${{ env.TIME }}
-       path: curl-7.70.0
+       path: curl-7.70.0/curl-7.70.0/builds
