@@ -1,4 +1,4 @@
-name: Harbour for Win64 using msvc
+name: testing vcpkg.exe
 
 on:
   push:
