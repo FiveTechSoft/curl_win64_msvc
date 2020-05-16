@@ -14,7 +14,7 @@ jobs:
     - name: Installing dependencies
       shell: cmd 
       run: |
-        vcpkg.exe install curl
-        vcpkg.exe install openssl
+        vcpkg.exe install curl:x64-windows
+        vcpkg.exe install openssl:x64-windows
         dir 
         
