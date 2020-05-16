@@ -17,4 +17,18 @@ jobs:
           vcpkg.exe install openssl:x64-windows
           vcpkg.exe list
           vcpkg integrate install
+          
+      - name: Get current time
+        uses: srfrnk/current-time@master
+        id: current-time
+        with:
+          format: YYYY_MM_DD
+ 
+      - name: Upload mod_harbour to artifact
+        env:
+           TIME: "${{ steps.current-time.outputs.formattedTime }}"
+        uses: actions/upload-artifact@v2
+        with:
+          name: test_vcpkg_${{ env.TIME }}
+          path: c:\          
         
