@@ -1,0 +1,18 @@
+name: curl for Win64 and msvc using vcpkg
+
+on:
+  push:
+  watch:
+   types: [started]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+  
+    - name: Checking vcpkg existente
+      shell: cmd 
+      run: |
+        vcpkg.exe
+        
