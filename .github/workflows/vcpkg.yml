@@ -1,4 +1,4 @@
-name: curl for Win64 and msvc using vcpkg
+name: Harbour for Win64 using msvc
 
 on:
   push:
@@ -10,11 +10,9 @@ jobs:
     runs-on: windows-latest
     
     steps:
-  
-    - name: Installing dependencies
-      shell: cmd 
-      run: |
-        vcpkg.exe install curl:x64-windows
-        vcpkg.exe install openssl:x64-windows
-        dir 
+      - name: checking vcpkg
+        shell: cmd 
+        run: |
+          vcpkg.exe search curl
+          vcpkg.exe search openssl
         
