@@ -16,4 +16,5 @@ jobs:
           vcpkg.exe install curl:x64-windows
           vcpkg.exe install openssl:x64-windows
           vcpkg.exe list
+          vcpkg integrate install
         
