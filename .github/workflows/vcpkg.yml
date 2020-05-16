@@ -11,8 +11,8 @@ jobs:
     
     steps:
   
-    - name: Checking vcpkg existente
+    - name: Using vcpkg to get curl
       shell: cmd 
       run: |
-        vcpkg.exe
+        vcpkg.exe install curl
         
