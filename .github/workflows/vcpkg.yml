@@ -13,6 +13,5 @@ jobs:
       - name: checking vcpkg
         shell: cmd 
         run: |
-          vcpkg.exe search curl
-          vcpkg.exe search openssl
+          vcpkg.exe list
         
