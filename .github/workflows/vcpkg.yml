@@ -11,8 +11,10 @@ jobs:
     
     steps:
   
-    - name: Using vcpkg to get curl
+    - name: Installing dependencies
       shell: cmd 
       run: |
         vcpkg.exe install curl
+        vcpkg.exe install openssl
+        dir 
         
